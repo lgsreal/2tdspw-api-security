@@ -29,7 +29,7 @@ public class AuthController {
         var userPwd = new UsernamePasswordAuthenticationToken(
                 authDTO.username(),
                 authDTO.password());
-        var auth = this.authenticationManager.authenticate(userPwd);
+        //var auth = this.authenticationManager.authenticate(userPwd);
         return ResponseEntity.ok().build();
     }
 
